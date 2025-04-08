@@ -1,10 +1,10 @@
 ||today.line.me^
 ||news.tvbs.com.tw^
-||news.pts.org.tw^
+
 ||tw.yahoo.com^
 ||tw.news.yahoo.com^
 ||tw.nextapple.com^
-||dcard.tw^
+
 ||cna.com.tw^
 ||udn.com^
 ||news.google.com.tw^
