@@ -1,0 +1,137 @@
+! =================================================================
+! 廣泛型線上遊戲與娛樂網站封鎖規則列表 (ABP 格式)
+! 更新日期: 2025-06-30
+! =================================================================
+!
+! 說明:
+! 此列表專為學校環境設計，用於阻擋常見的線上遊戲網站、遊戲平台、社群與實況服務。
+! 格式主要採用 Adblock Plus 的網域封鎖語法。
+!
+! 語法說明:
+! ||example.com^   - 封鎖 example.com 及其所有子網域 (e.g., www.example.com, games.example.com)
+! ! 這是一段註解   - 註解不會被執行
+! # 這也是一段註解 - 註解不會被執行
+!
+! =================================================================
+! Section 1: 遊戲天堂及其直接相關網站
+! =================================================================
+! 這是針對搜尋結果中與「遊戲天堂」最直接相關的網域
+||i-gamer.net^
+||games.net.tw^
+||game.com.tw^
+||game01.com^
+||playgame.wiki^
+||game3.tw^
+||game155.com^
+||game2.tw^
+||games.hinet.net^
+||igame123.com^
+
+! =================================================================
+! Section 2: 大型中文遊戲入口/社群
+! =================================================================
+! 封鎖台灣與中國大陸地區主流的遊戲資訊站與小遊戲平台
+||gamer.com.tw^
+||gamebase.com.tw^
+||4399.com^
+||7k7k.com^
+||17.com^
+||u7u9.com^
+||wan.com^
+||100bt.com^
+||taptap.io^
+||qoo-app.com^
+||8591.com.tw^
+
+! =================================================================
+! Section 3: 國際知名線上小遊戲平台
+! =================================================================
+! 封鎖全球範圍內流行的線上 Flash/HTML5 小遊戲網站
+||poki.com^
+||crazygames.com^
+||crazy-games.com^
+||y8.com^
+||kongregate.com^
+||newgrounds.com^
+||armorgames.com^
+||miniclip.com^
+||agame.com^
+||silvergames.com^
+||plays.org^
+||lagged.com^
+||friv.com^
+||coolmathgames.com^
+||addictinggames.com^
+||shockwave.com^
+||bigfishgames.com^
+||kbhgames.com^
+||plonga.com^
+||mousebreaker.com^
+||girlsgogames.com^
+||keygames.com^
+||yiv.com^
+||pogo.com^
+||html5games.com^
+||freeonlinegames.com^
+||boredbutton.com^
+
+! =================================================================
+! Section 4: 遊戲發行與銷售平台
+! =================================================================
+! 注意: 封鎖此區塊可能會影響已安裝遊戲的更新或正版驗證
+||steampowered.com^
+||steamcommunity.com^
+||steamstatic.com^
+||epicgames.com^
+||gog.com^
+||ubisoft.com^
+||ea.com^
+||origin.com^
+||battle.net^
+||blizzard.com^
+||riotgames.com^
+||playvalorant.com^
+||leagueoflegends.com^
+
+! =================================================================
+! Section 5: 遊戲主機與新聞媒體
+! =================================================================
+||nintendo.com^
+||playstation.com^
+||xbox.com^
+||ign.com^
+||gamespot.com^
+||polygon.com^
+||kotaku.com^
+||pcgamer.com^
+||gamesradar.com^
+||gamewikia.com^
+||fextralife.com^
+
+! =================================================================
+! Section 6: 遊戲實況與社群平台
+! =================================================================
+! 注意: 封鎖 Discord 可能會影響到非遊戲相關的學術或社團群組
+||twitch.tv^
+||ttvnw.net^
+
+
+! =================================================================
+! Section 7: REGEX 規則 (實驗性，請謹慎使用)
+! =================================================================
+! 警告: REGEX 規則非常強大，但也可能誤擋正常網站。請在測試環境中充分驗證。
+!
+! 封鎖包含 "online-games", "free-games" 等組合的網域
+/(^|\.)(online|free|play)[\-_]?(game|games)/
+!
+! 封鎖結尾是 game.io 或 games.io 的網域 (常見於新型態網頁遊戲)
+/(^|\.)[a-z0-9\-]+games?\.io/
+! =================================================================
+! 規則列表結束
+! =================================================================
+
+! --- 白名單範例 (解除封鎖) ---
+! 如果上述規則不小心擋掉了您需要的教育遊戲網站 (例如 scratch.mit.edu)，
+! 但它又不幸被 REGEX 規則掃到，您可以在此處手動將其解除封鎖。
+! 語法是 @@||domain.com^
+! @@||scratch.mit.edu^
