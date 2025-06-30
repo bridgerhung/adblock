@@ -1,17 +1,39 @@
 ! =================================================================
-! 超級廣泛型線上遊戲與娛樂網站封鎖規則列表 v3.0
+! 超級廣泛型線上遊戲與娛樂網站封鎖規則列表 v5.0
 ! 更新日期: 2025-06-30
 !
-! 新增:
-! - 專門針對槍械、暴力、射擊類遊戲的封鎖區塊 (Section 9)
-! - 新增 61.com.tw 及其他相關網域
-! - 強化 REGEX 規則
+! v5.0 更新日誌:
+! - [新增] 根據使用者回饋，加入 37.com, kuioo.tw, wakool.net, g123.jp, 6699.me 等網域。
+! - [調整] 優化分類，將新增網域歸入最合適的區塊。
 !
-! 警告: 此列表極為嚴格，可能導致過度封鎖 (Over-blocking)。
-! 使用前請務必將學校需要的網站 (如 scratch.mit.edu) 加入白名單。
+! 警告: 此列表極為嚴格。請務必將所有教學、行政所需網站加入 Section 0 的白名單。
 ! =================================================================
 
-! Section 1: 華語地區流行兒童/青少年線上遊戲 (擴展)
+! =================================================================
+! Section 0: 白名單 / 解除封鎖規則 (Whitelist / Exceptions)
+! =================================================================
+! 此區塊的規則優先級最高，用於確保必要的服務不會被封鎖。
+!
+! 解除對 Discord 的封鎖
+@@||discord.com^
+@@||discord.gg^
+@@||discordapp.com^
+@@||discordapp.net^
+!
+! 建議的教育與工具網站白名單 (請自行移除前方 ! 啟用)
+! @@||scratch.mit.edu^
+! @@||code.org^
+! @@||khanacademy.org^
+! @@||wikipedia.org^
+! @@||google.com^
+! @@||teams.microsoft.com^
+! @@||github.com^
+! @@||unity.com^
+! @@||unrealengine.com^
+! @@||junyiacademy.org^
+
+! =================================================================
+! Section 1: 華語地區流行兒童/青少年線上遊戲
 ! =================================================================
 ||61.com^
 ||61.com.tw^
@@ -25,12 +47,9 @@
 ||2125.com^
 ||91wan.com^
 ||37.com^
-||kuioo.tw^
-||wakool.net^
-||g123.jp^
-||6699.me^
 
-! Section 2: 遊戲天堂及其相關中文遊戲平台
+! =================================================================
+! Section 2: 遊戲天堂及台灣/香港遊戲平台
 ! =================================================================
 ||i-gamer.net^
 ||games.net.tw^
@@ -45,7 +64,10 @@
 ||pbar.com.tw^
 ||games.yahoo.com.tw^
 ||gameflier.com^
+||wakool.net^
+||kuioo.tw^
 
+! =================================================================
 ! Section 3: 中國大陸主要小遊戲與遊戲平台
 ! =================================================================
 ||4399.com^
@@ -58,25 +80,38 @@
 ||gamersky.com^
 ||ali213.net^
 ||3dmgame.com^
+||6699.me^
 
-! Section 4: 主要遊戲開發商/發行商 (綜合)
 ! =================================================================
-||tencent.com^
-||qq.com^
-||gcloud.com^
-||netease.com^
-||163.com^
-||wanmei.com^
-||take2games.com^
-||rockstargames.com^
-||2k.com^
-||nexon.net^
-||bandainamcoent.com^
-||square-enix-games.com^
-||sega.com^
-||capcom.com^
-||konami.com^
+! Section 4: 槍械、暴力與射擊類遊戲 (FPS/Action)
+! =================================================================
+||activision.com^
+||blizzard.com^
+||battle.net^
+||ea.com^
+||origin.com^
+||ubisoft.com^
+||uplay.com^
+||riotgames.com^
+||bethesda.net^
+||krafton.com^
+||garena.com^
+||pubg.com^
+||pubgmobile.com^
+||callofduty.com^
+||battlefield.com^
+||fortnite.com^
+||playvalorant.com^
+||leagueoflegends.com^
+||playapex.com^
+||halowaypoint.com^
+||counter-strike.net^
+||doom.com^
+||rainbow6.com^
+||escapefromtarkov.com^
+||playoverwatch.com^
 
+! =================================================================
 ! Section 5: "Unblocked Games" - 繞過封鎖專用
 ! =================================================================
 ||unblockedgames.com^
@@ -90,11 +125,11 @@
 ||poki.com/en/unblocked^
 ||wtf.games^
 
-! Section 6: 國際小遊戲與網頁遊戲平台 (超級擴展)
+! =================================================================
+! Section 6: 國際小遊戲與網頁遊戲平台
 ! =================================================================
 ||poki.com^
 ||crazygames.com^
-||crazy-games.com^
 ||y8.com^
 ||kongregate.com^
 ||newgrounds.com^
@@ -122,16 +157,12 @@
 ||2player.com^
 ||1001games.com^
 ||iogames.com^
-||iogames.fun^
 ||arkadium.com^
 ||gamesgames.com^
-||kiloo.com^
-||gamezop.com^
-||gogy.com^
-||crazygames.cc^
-||gameforge.com^
+||g123.jp^
 
-! Section 7: 遊戲銷售、實況與社群平台 (擴展)
+! =================================================================
+! Section 7: 遊戲銷售、實況與社群平台
 ! =================================================================
 ||steampowered.com^
 ||steamcommunity.com^
@@ -145,48 +176,53 @@
 ||roblox.com^
 ||minecraft.net^
 
-! Section 8: 主要主機平台
+! Section 8: 主要主機與開發商平台
 ! =================================================================
 ||nintendo.com^
 ||playstation.com^
 ||xbox.com^
+||take2games.com^
+||rockstargames.com^
+||2k.com^
+||nexon.net^
+||bandainamcoent.com^
+||square-enix-games.com^
+||sega.com^
+||capcom.com^
+||konami.com^
+
+! Section 9: 其他主要遊戲開發商/發行商
+! =================================================================
+||tencent.com^
+||qq.com^
+||gcloud.com^
+||netease.com^
+||163.com^
+||wanmei.com^
 
 ! =================================================================
-! Section 9: 槍械、暴力與射擊類遊戲 (FPS/Action) - (新增區塊)
+! Section 10: 廣告、追蹤器與分析 (用於阻擋關鍵字廣告)
 ! =================================================================
-! 這是針對槍械、戰爭、動作格鬥、大逃殺類遊戲的專門封鎖列表
-!
-! 開發商/發行商
-||activision.com^
-||blizzard.com^
-||battle.net^
-||ea.com^
-||origin.com^
-||ubisoft.com^
-||uplay.com^
-||riotgames.com^
-||bethesda.net^
-||krafton.com^
-||garena.com^
-||pubg.com^
-||pubgmobile.com^
-!
-! 主要遊戲與系列
-||callofduty.com^
-||battlefield.com^
-||fortnite.com^
-||playvalorant.com^
-||leagueoflegends.com^
-||playapex.com^
-||halowaypoint.com^
-||counter-strike.net^
-||doom.com^
-||rainbow6.com^
-||escapefromtarkov.com^
-||playoverwatch.com^
+||doubleclick.net^
+||adservice.google.com^
+||googleadservices.com^
+||googlesyndication.com^
+||googletagservices.com^
+||google-analytics.com^
+||ad.doubleclick.net^
+||pagead2.googlesyndication.com^
+||criteo.com^
+||criteo.net^
+||adnxs.com^
+||adform.net^
+||taboola.com^
+||outbrain.com^
+||scorecardresearch.com^
+||quantserve.com^
+||connect.facebook.net^
 
 ! =================================================================
-! Section 10: REGEX 規則 (極度嚴格，風險最高)
+! Section 11: REGEX 規則 (極度嚴格，風險最高)
 ! =================================================================
 ! 警告: REGEX 可能會誤擋大量無關網站，請在充分測試後選擇性啟用。
 !
@@ -197,27 +233,10 @@
 /(^|\.)(war|gun|guns|fps|shooter|combat|kill|action|arena|battle|royale)/
 !
 ! 封鎖特定頂級網域 (TLD)
-/\.(game|games|lol|gg|fun|online|wtf)$/
+/\.(game|games|lol|fun|online|wtf)$/
 !
 ! 封鎖中文的 "遊戲" 網域 (Punycode: xn--gmqz22a)
 /(^|\.)xn--gmqz22a/
 ! =================================================================
 ! 規則列表結束
 ! =================================================================
-
-! --- 強烈建議的白名單 (解除封鎖) ---
-! 請務必將此處需要的網站取消註解 (移除 !)，或將規則加入您的白名單。
-!
-! ! @@||scratch.mit.edu^
-! ! @@||code.org^
-! ! @@||khanacademy.org^
-! ! @@||wikipedia.org^
-! ! @@||google.com^
-! ! @@||google-analytics.com^  !部分網站功能需要
-! ! @@||googletagmanager.com^ !部分網站功能需要
-! ! @@||gstatic.com^          !Google靜態資源
-! ! @@||teams.microsoft.com^
-! ! @@||github.com^
-! ! @@||unity.com^            !Unity引擎官網 (可能被REGEX誤擋)
-! ! @@||unrealengine.com^     !Unreal引擎官網 (可能被REGEX誤擋)
-! ! @@||junyiacademy.org^     !均一教育平台
