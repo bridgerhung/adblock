@@ -6,7 +6,7 @@
 ||discover-pa.googleapis.com^
 ||sch.line.me^
 ||jp-col-tcp.nelo.linecorp.com^
-||component-ota-sg.allawnos.com^
+@@||component-ota-sg.allawnos.com^
 ||heytapdl.com^
 ||music-tw.line.me^
 ||music-tw-img.line-apps.com^
