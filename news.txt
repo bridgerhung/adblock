@@ -25,3 +25,7 @@
 ||thenewslens.com^
 
 ||yahoo.com^
+
+||news.pts.org.tw^
+||ftvnews.com.tw^
+||ctwant.com^
