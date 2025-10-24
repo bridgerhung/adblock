@@ -29,3 +29,6 @@
 ||news.pts.org.tw^
 ||ftvnews.com.tw^
 ||ctwant.com^
+||ctinews.com^
+||mnews.tw^
+||cts.com.tw^
