@@ -10,6 +10,8 @@
 ||news.google.com.tw^
 ||news.google.com^
 
+||www.businesstoday.com.tw^
+
 ||ettoday.net^
 ||ltn.com.tw^
 ||udn.com^
