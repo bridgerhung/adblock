@@ -1,0 +1,83 @@
+name: Update NSFW List
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-nsfw-list:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Download NSFW list
+        run: |
+          echo "Downloading NSFW list from https://nsfw.oisd.nl/"
+          curl -f -L -o nsfw-list-raw.txt https://nsfw.oisd.nl/ --max-time 60
+          echo "Download completed"
+          echo "Raw file size: $(wc -l < nsfw-list-raw.txt) lines"
+      
+      - name: Process NSFW list
+        run: |
+          echo "Processing NSFW list..."
+          awk '
+            /^[[:space:]]*$/ { print; next }  # Preserve empty lines
+            /^!/ { print; next }               # Preserve comment lines
+            /^\[/ { print; next }              # Preserve config lines
+            { 
+              if ($0 ~ /\$ctag=/) {
+                # Already has ctag, skip
+                print
+              } else if ($0 ~ /\$/) {
+                # Has $ (other options), append with comma
+                print $0 ",ctag=~user_regular"
+              } else if ($0 ~ /\^[[:space:]]*$/) {
+                # Ends with ^, insert tag after it
+                sub(/\^[[:space:]]*$/, "^$ctag=~user_regular")
+                print
+              } else {
+                # Append tag at the end
+                print $0 "$ctag=~user_regular"
+              }
+            }
+          ' nsfw-list-raw.txt > nsfw-list.txt
+          
+          echo "Processing completed"
+          echo "Processed file size: $(wc -l < nsfw-list.txt) lines"
+          
+          # Show first 10 lines for debugging
+          echo "First 10 lines of processed file:"
+          head -n 10 nsfw-list.txt
+          
+          # Clean up temporary file
+          rm -f nsfw-list-raw.txt
+      
+      - name: Update timestamp
+        run: |
+          echo "Last updated: $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > UPDATE_TIME.txt
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          git add nsfw-list.txt UPDATE_TIME.txt
+          
+          # Check if there are changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes detected, skipping commit"
+          else
+            COMMIT_DATE=$(date -u '+%Y-%m-%d')
+            git commit -m "chore: update NSFW list - ${COMMIT_DATE}"
+            git push
+            echo "Changes committed and pushed"
+          fi
