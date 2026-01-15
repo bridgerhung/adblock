@@ -1,37 +1,37 @@
-||today.line.me^
-||news.tvbs.com.tw^
+||today.line.me^$ctag=~user_regular
+||news.tvbs.com.tw^$ctag=~user_regular
 
-||tw.yahoo.com^
-||tw.news.yahoo.com^
-||tw.nextapple.com^
+||tw.yahoo.com^$ctag=~user_regular
+||tw.news.yahoo.com^$ctag=~user_regular
+||tw.nextapple.com^$ctag=~user_regular
 
-||cna.com.tw^
-||udn.com^
-||news.google.com.tw^
-||news.google.com^
+||cna.com.tw^$ctag=~user_regular
+||udn.com^$ctag=~user_regular
+||news.google.com.tw^$ctag=~user_regular
+||news.google.com^$ctag=~user_regular
 
-||www.businesstoday.com.tw^
+||www.businesstoday.com.tw^$ctag=~user_regular
 
-||ettoday.net^
-||ltn.com.tw^
-||udn.com^
-||chinatimes.com^
-||nownews.com^
-||storm.mg^
-||mirrormedia.mg^
-||setn.com^
-||www.mirrormedia.mg^
-||news.tvbs.com.tw^
-||news.ebc.net.tw^
-||cna.com.tw^
-||newtalk.tw^
-||thenewslens.com^
+||ettoday.net^$ctag=~user_regular
+||ltn.com.tw^$ctag=~user_regular
+||udn.com^$ctag=~user_regular
+||chinatimes.com^$ctag=~user_regular
+||nownews.com^$ctag=~user_regular
+||storm.mg^$ctag=~user_regular
+||mirrormedia.mg^$ctag=~user_regular
+||setn.com^$ctag=~user_regular
+||www.mirrormedia.mg^$ctag=~user_regular
+||news.tvbs.com.tw^$ctag=~user_regular
+||news.ebc.net.tw^$ctag=~user_regular
+||cna.com.tw^$ctag=~user_regular
+||newtalk.tw^$ctag=~user_regular
+||thenewslens.com^$ctag=~user_regular
 
-||yahoo.com^
+||yahoo.com^$ctag=~user_regular
 
-||news.pts.org.tw^
-||ftvnews.com.tw^
-||ctwant.com^
-||ctinews.com^
-||mnews.tw^
-||cts.com.tw^
+||news.pts.org.tw^$ctag=~user_regular
+||ftvnews.com.tw^$ctag=~user_regular
+||ctwant.com^$ctag=~user_regular
+||ctinews.com^$ctag=~user_regular
+||mnews.tw^$ctag=~user_regular
+||cts.com.tw^$ctag=~user_regular
