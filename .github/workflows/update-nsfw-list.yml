@@ -41,19 +41,19 @@ jobs:
             /^!/ { print; next }               # Preserve comment lines
             /^\[/ { print; next }              # Preserve config lines
             { 
-              if ($0 ~ /\$ctag=/) {
-                # Already has ctag, skip
+              if ($0 ~ /\$client=/) {
+                # Already has client, skip
                 print
               } else if ($0 ~ /\$/) {
                 # Has $ (other options), append with comma
-                print $0 ",ctag=~user_regular"
+                print $0 ",client=\047mobile\047"
               } else if ($0 ~ /\^[[:space:]]*$/) {
                 # Ends with ^, insert tag after it
-                sub(/\^[[:space:]]*$/, "^$ctag=~user_regular")
+                sub(/\^[[:space:]]*$/, "^$client=\047mobile\047")
                 print
               } else {
                 # Append tag at the end
-                print $0 "$ctag=~user_regular"
+                print $0 "$client=\047mobile\047"
               }
             }
           ' nsfw-list-raw.txt > nsfw-list.txt
