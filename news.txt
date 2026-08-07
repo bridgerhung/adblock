@@ -5,6 +5,8 @@
 ||tw.nextapple.com^$client='mobile'
 
 ||cna.com.tw^$client='mobile'
+||udn.com^$client='mobile'
+@@||reading.udn.com^$client='mobile'
 ||news.google.com.tw^$client='mobile'
 ||news.google.com^$client='mobile'
 ||www.businesstoday.com.tw^$client='mobile'
