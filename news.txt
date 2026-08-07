@@ -11,6 +11,8 @@
 
 ||ettoday.net^$client='mobile'
 ||news.ltn.com.tw^$client='mobile'
+||ent.ltn.com.tw^$client='mobile'
+||www.ltn.com.tw^$client='mobile'
 ||chinatimes.com^$client='mobile'
 ||nownews.com^$client='mobile'
 ||storm.mg^$client='mobile'
