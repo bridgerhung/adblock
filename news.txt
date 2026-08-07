@@ -10,7 +10,7 @@
 ||www.businesstoday.com.tw^$client='mobile'
 
 ||ettoday.net^$client='mobile'
-||ltn.com.tw^$client='mobile'
+||news.ltn.com.tw^$client='mobile'
 ||chinatimes.com^$client='mobile'
 ||nownews.com^$client='mobile'
 ||storm.mg^$client='mobile'
@@ -27,7 +27,10 @@
 ||ctwant.com^$client='mobile'
 ||ctinews.com^$client='mobile'
 ||mnews.tw^$client='mobile'
-||cts.com.tw^$client='mobile'
+||news.cts.com.tw^$client='mobile'
+||news.ttv.com.tw^$client='mobile'
+||nexttv.com.tw^$client='mobile'
+||globalnewstv.com.tw^$client='mobile'
 
 ||taisounds.com^$client='mobile'
 ||upmedia.mg^$client='mobile'
