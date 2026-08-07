@@ -5,14 +5,12 @@
 ||tw.nextapple.com^$client='mobile'
 
 ||cna.com.tw^$client='mobile'
-||udn.com^$client='mobile'
 ||news.google.com.tw^$client='mobile'
 ||news.google.com^$client='mobile'
 ||www.businesstoday.com.tw^$client='mobile'
 
 ||ettoday.net^$client='mobile'
 ||ltn.com.tw^$client='mobile'
-||udn.com^$client='mobile'
 ||chinatimes.com^$client='mobile'
 ||nownews.com^$client='mobile'
 ||storm.mg^$client='mobile'
