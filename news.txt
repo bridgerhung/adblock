@@ -39,7 +39,6 @@
 ||cna.com.tw^$client='mobile'
 ||newtalk.tw^$client='mobile'
 
-||news.pts.org.tw^$client='mobile'
 ||ftvnews.com.tw^$client='mobile'
 ||ctwant.com^$client='mobile'
 ||ctinews.com^$client='mobile'
