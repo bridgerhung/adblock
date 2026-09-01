@@ -1,10 +1,10 @@
 [Adblock Plus]
-! Version: 202608310106
+! Version: 202609010011
 ! Title: oisd nsfw
 ! Description: Block. Don't break.
 ! Syntax: Adblock Plus Filter List
-! Entries: 480502
-! Last modified: 2026-08-31T01:06:33+0000
+! Entries: 480495
+! Last modified: 2026-09-01T00:11:28+0000
 ! Expires: 1 hours
 ! License: https://github.com/sjhgvr/oisd/blob/main/LICENSE
 ! Maintainer: Stephan van Ruth
@@ -36843,7 +36843,6 @@
 ||alryyan.com^$client='mobile'
 ||als115.sbs^$client='mobile'
 ||als246.sbs^$client='mobile'
-||alsacelibertins.com^$client='mobile'
 ||alsaidslaveauctionblock.blogspot.com^$client='mobile'
 ||alsancakerotikshop.com.tr^$client='mobile'
 ||alsancakescort.com^$client='mobile'
@@ -44437,7 +44436,6 @@
 ||any-porn.com^$client='mobile'
 ||any-sane-adult-2020.myshopufy.com^$client='mobile'
 ||any-xxx.com^$client='mobile'
-||any.gay^$client='mobile'
 ||any.webcam^$client='mobile'
 ||anya-china.com^$client='mobile'
 ||anya1.net.cn^$client='mobile'
@@ -76497,7 +76495,6 @@
 ||boyfrientv.top^$client='mobile'
 ||boyft.net^$client='mobile'
 ||boyfuck.com^$client='mobile'
-||boyfuck.me^$client='mobile'
 ||boyfuckdog.com^$client='mobile'
 ||boyfucked.com^$client='mobile'
 ||boyfucker.com^$client='mobile'
@@ -116163,7 +116160,6 @@
 ||desktopgirls.nl^$client='mobile'
 ||desktopgirlsonline.com^$client='mobile'
 ||desktoplesbians.net^$client='mobile'
-||desktopporno.nl^$client='mobile'
 ||desktops-for-attu.blogspot.com^$client='mobile'
 ||desktopstars.com^$client='mobile'
 ||desktopstripper.ca^$client='mobile'
@@ -134226,7 +134222,6 @@
 ||erotictaboophone.com^$client='mobile'
 ||erotictaboophonesex.com^$client='mobile'
 ||erotictales.net^$client='mobile'
-||erotictalespuzzles.com^$client='mobile'
 ||erotictaleworld.blogspot.com^$client='mobile'
 ||erotictalk.org^$client='mobile'
 ||erotictalkphonesex.com^$client='mobile'
@@ -171870,7 +171865,6 @@
 ||gd91.sbs^$client='mobile'
 ||gd985.sbs^$client='mobile'
 ||gda379.sbs^$client='mobile'
-||gdahj.com^$client='mobile'
 ||gdama.com^$client='mobile'
 ||gdaokai.com^$client='mobile'
 ||gdaot.com^$client='mobile'
@@ -205539,7 +205533,6 @@
 ||hybhvban.autos^$client='mobile'
 ||hybidwoman.blogspot.com^$client='mobile'
 ||hyboao.com.cn^$client='mobile'
-||hybrids-hotties.com^$client='mobile'
 ||hybridshotties.com^$client='mobile'
 ||hybrydz.blogspot.com^$client='mobile'
 ||hyc440.sbs^$client='mobile'
@@ -215060,6 +215053,7 @@
 ||izinporno.shop^$client='mobile'
 ||izinporno1.shop^$client='mobile'
 ||izinporno1a.shop^$client='mobile'
+||izinporno5.shop^$client='mobile'
 ||izinpornoa.shop^$client='mobile'
 ||izisex.net^$client='mobile'
 ||izisex.org^$client='mobile'
@@ -252309,7 +252303,6 @@
 ||lxxxlxxx.top^$client='mobile'
 ||lxxxswsy.com^$client='mobile'
 ||lxxxx.org^$client='mobile'
-||lxxxxlxxx.com^$client='mobile'
 ||lxxyy.com^$client='mobile'
 ||lxychina.com^$client='mobile'
 ||lxyfpop.com^$client='mobile'
@@ -304877,6 +304870,7 @@
 ||photos-transexuel.blogspot.com^$client='mobile'
 ||photos.amatrices.free.fr^$client='mobile'
 ||photos.anal.sodomie.free.fr^$client='mobile'
+||photos.any.gay^$client='mobile'
 ||photos.blacks.free.fr^$client='mobile'
 ||photos.free.fr^$client='mobile'
 ||photos.handtrixxx.com^$client='mobile'
@@ -329896,7 +329890,6 @@
 ||premiporn.com^$client='mobile'
 ||premium-adult-access.pages.dev^$client='mobile'
 ||premium-adult-pass.blogspot.com^$client='mobile'
-||premium-adult-site.com^$client='mobile'
 ||premium-archive.com^$client='mobile'
 ||premium-bdsm.com^$client='mobile'
 ||premium-beauty.com^$client='mobile'
@@ -452279,7 +452272,6 @@
 ||xhamster41.desi^$client='mobile'
 ||xhamster42.desi^$client='mobile'
 ||xhamster43.desi^$client='mobile'
-||xhamster44.com^$client='mobile'
 ||xhamster44.desi^$client='mobile'
 ||xhamster45.desi^$client='mobile'
 ||xhamster46.desi^$client='mobile'
@@ -477004,6 +476996,7 @@
 ||zhrcykx.cn^$client='mobile'
 ||zhrd.net.cn^$client='mobile'
 ||zhrebtov2.blogspot.com^$client='mobile'
+||zhs.lxxxxlxxx.com^$client='mobile'
 ||zhs.xxx^$client='mobile'
 ||zhs2.mom^$client='mobile'
 ||zhs668.com^$client='mobile'
